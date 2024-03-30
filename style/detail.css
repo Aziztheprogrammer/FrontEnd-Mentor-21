@@ -1,0 +1,132 @@
+/* line 3, detail.scss */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+/* line 7, detail.scss */
+body {
+  font-family: "Nunito sans", sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  -webkit-transition: 0.7s ease-in-out background-color,  0.7s ease-in-out color;
+  transition: 0.7s ease-in-out background-color,  0.7s ease-in-out color; }
+
+/* line 15, detail.scss */
+header {
+  font-size: clamp(0.75rem, 5vw, 1.15rem);
+  background-color: var(--elements);
+  -webkit-transition: 0.7s ease-in-out background-color;
+  transition: 0.7s ease-in-out background-color; }
+  /* line 20, detail.scss */
+  header > .container {
+    padding: 0px 16px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    /* line 27, detail.scss */
+    header > .container .logo {
+      padding: 24px 0px;
+      font-weight: bold; }
+    /* line 32, detail.scss */
+    header > .container .theme {
+      font-size: 1rem; }
+      /* line 35, detail.scss */
+      header > .container .theme label {
+        cursor: pointer; }
+        @media (max-width: 390px) {
+          /* line 38, detail.scss */
+          header > .container .theme label span {
+            display: none; } }
+        /* line 45, detail.scss */
+        header > .container .theme label i {
+          margin-right: 8px; }
+    /* line 51, detail.scss */
+    header > .container input[type="checkbox"] {
+      -webkit-appearance: none;
+         -moz-appearance: none;
+              appearance: none; }
+
+/* line 61, detail.scss */
+main {
+  padding: 48px 0px; }
+  /* line 64, detail.scss */
+  main > .container {
+    padding: 0px 16px;
+    margin: auto; }
+    /* line 68, detail.scss */
+    main > .container .link__box {
+      width: 100%; }
+      /* line 71, detail.scss */
+      main > .container .link__box a {
+        padding: 8px 24px;
+        background-color: var(--elements);
+        -webkit-transition: 0.7s ease-in-out background-color;
+        transition: 0.7s ease-in-out background-color;
+        border-radius: 4px; }
+    /* line 79, detail.scss */
+    main > .container .content {
+      padding-top: 48px;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: clamp(16px, 15%, 48px);
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      justify-items: center; }
+      @media (max-width: 996px) {
+        /* line 79, detail.scss */
+        main > .container .content {
+          grid-template: repeat(2, auto)/1fr; } }
+      /* line 91, detail.scss */
+      main > .container .content .details {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        gap: 32px; }
+        /* line 96, detail.scss */
+        main > .container .content .details .country__name {
+          font-size: 1.7rem;
+          font-weight: bolder; }
+        /* line 101, detail.scss */
+        main > .container .content .details > .info {
+          width: 100%;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between;
+          font-size: 0.85rem; }
+          @media (max-width: 996px) {
+            /* line 101, detail.scss */
+            main > .container .content .details > .info {
+              -webkit-box-orient: vertical;
+              -webkit-box-direction: normal;
+                  -ms-flex-direction: column;
+                      flex-direction: column;
+              gap: 16px; } }
+          /* line 112, detail.scss */
+          main > .container .content .details > .info ul li {
+            margin-bottom: 8px; }
+        /* line 119, detail.scss */
+        main > .container .content .details .border__countries span {
+          display: inline-block;
+          background-color: var(--elements);
+          -webkit-transition: 0.7s ease-in-out background-color;
+          transition: 0.7s ease-in-out background-color;
+          padding: 8px 16px;
+          border-radius: 4px;
+          margin-left: 16px;
+          margin-top: 8px;
+          font-size: 0.75rem; }

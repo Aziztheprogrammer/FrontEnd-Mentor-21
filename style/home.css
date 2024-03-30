@@ -1,0 +1,171 @@
+/* line 3, home.scss */
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+/* line 7, home.scss */
+body {
+  font-family: "Nunito sans", sans-serif;
+  background-color: var(--background);
+  color: var(--text);
+  -webkit-transition: 0.7s ease-in-out background-color,  0.7s ease-in-out color;
+  transition: 0.7s ease-in-out background-color,  0.7s ease-in-out color; }
+
+/* line 17, home.scss */
+header {
+  font-size: clamp(0.75rem, 1.1rem, 1.15rem);
+  background-color: var(--elements);
+  -webkit-transition: 0.7s ease-in-out background-color;
+  transition: 0.7s ease-in-out background-color; }
+  /* line 22, home.scss */
+  header > .container {
+    padding: 0px 16px;
+    margin: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    /* line 29, home.scss */
+    header > .container .logo {
+      padding: 24px 0px;
+      font-weight: bold; }
+    /* line 34, home.scss */
+    header > .container .theme {
+      font-size: 1rem; }
+      /* line 37, home.scss */
+      header > .container .theme label {
+        cursor: pointer; }
+        @media (max-width: 390px) {
+          /* line 40, home.scss */
+          header > .container .theme label span {
+            display: none; } }
+        /* line 47, home.scss */
+        header > .container .theme label i {
+          margin-right: 8px; }
+    /* line 53, home.scss */
+    header > .container input[type="checkbox"] {
+      -webkit-appearance: none;
+         -moz-appearance: none;
+              appearance: none; }
+
+/* line 64, home.scss */
+section.main__section {
+  padding: 48px 0px; }
+  /* line 67, home.scss */
+  section.main__section > .container {
+    padding: 0px 16px;
+    margin: auto; }
+    /* line 71, home.scss */
+    section.main__section > .container div.search {
+      width: 100%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      gap: 16px; }
+      /* line 79, home.scss */
+      section.main__section > .container div.search > .search__bar {
+        padding: 16px 24px;
+        background-color: var(--elements);
+        -webkit-transition: 0.7s ease-in-out background-color;
+        transition: 0.7s ease-in-out background-color;
+        border-radius: 4px; }
+        /* line 85, home.scss */
+        section.main__section > .container div.search > .search__bar input {
+          background-color: var(--elements);
+          -webkit-transition: 0.7s ease-in-out background-color;
+          transition: 0.7s ease-in-out background-color;
+          color: var(--text); }
+          /* line 90, home.scss */
+          section.main__section > .container div.search > .search__bar input:focus {
+            outline: none; }
+          /* line 94, home.scss */
+          section.main__section > .container div.search > .search__bar input::-webkit-input-placeholder {
+            color: var(--text);
+            -webkit-transition: 0.7s ease-in-out color;
+            transition: 0.7s ease-in-out color;
+            font-weight: 300; }
+          section.main__section > .container div.search > .search__bar input:-ms-input-placeholder {
+            color: var(--text);
+            -webkit-transition: 0.7s ease-in-out color;
+            transition: 0.7s ease-in-out color;
+            font-weight: 300; }
+          section.main__section > .container div.search > .search__bar input::-ms-input-placeholder {
+            color: var(--text);
+            -webkit-transition: 0.7s ease-in-out color;
+            transition: 0.7s ease-in-out color;
+            font-weight: 300; }
+          section.main__section > .container div.search > .search__bar input::placeholder {
+            color: var(--text);
+            -webkit-transition: 0.7s ease-in-out color;
+            transition: 0.7s ease-in-out color;
+            font-weight: 300; }
+        /* line 101, home.scss */
+        section.main__section > .container div.search > .search__bar i {
+          margin-right: 16px; }
+      /* line 106, home.scss */
+      section.main__section > .container div.search .region__selector {
+        background-color: var(--elements);
+        -webkit-transition: 0.7s ease-in-out background-color;
+        transition: 0.7s ease-in-out background-color;
+        padding: 16px 24px;
+        border-radius: 4px; }
+        /* line 112, home.scss */
+        section.main__section > .container div.search .region__selector select {
+          font-weight: 300;
+          background-color: var(--elements);
+          -webkit-transition: 0.7s ease-in-out background-color;
+          transition: 0.7s ease-in-out background-color; }
+          /* line 117, home.scss */
+          section.main__section > .container div.search .region__selector select:focus {
+            outline: none; }
+    /* line 124, home.scss */
+    section.main__section > .container div.content {
+      width: 100%;
+      padding: 48px 0px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      grid-gap: clamp(24px, 15%, 64px); }
+      /* line 131, home.scss */
+      section.main__section > .container div.content > .country {
+        background-color: var(--elements);
+        -webkit-transition: 0.7s ease-in-out background-color;
+        transition: 0.7s ease-in-out background-color;
+        border-radius: 8px;
+        cursor: pointer; }
+        /* line 137, home.scss */
+        section.main__section > .container div.content > .country .flag {
+          width: 100%;
+          height: 150px;
+          border-radius: 4px 4px 0px 0px;
+          background-color: white;
+          -o-object-fit: cover;
+             object-fit: cover; }
+        /* line 145, home.scss */
+        section.main__section > .container div.content > .country .details {
+          padding: 32px 16px; }
+          /* line 148, home.scss */
+          section.main__section > .container div.content > .country .details .country__name {
+            font-size: 1.1rem;
+            font-weight: 500; }
+          /* line 153, home.scss */
+          section.main__section > .container div.content > .country .details small {
+            display: block;
+            font-weight: 400;
+            font-size: 0.75rem;
+            margin-top: 4px; }
+          /* line 160, home.scss */
+          section.main__section > .container div.content > .country .details small:first-child {
+            margin-top: 32px; }

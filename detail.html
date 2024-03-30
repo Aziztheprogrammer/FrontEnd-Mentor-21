@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Countries API</title>
+	<!-- Adding Main Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+	<!-- Linking To Css File -->
+	<link rel="stylesheet" type="text/css" href="style/detail.css">
+	<!-- Tailwind CSS -->
+	<script src="https://cdn.tailwindcss.com"></script>
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/43b978cfd6.js" crossorigin="anonymous"></script>
+	<!-- Normalize Css File Included In Tailwind -->
+	<!-- Developed By Mohamed Aziz Berhouma -->
+</head>
+<body>
+	<header class="shadow-lg element">
+		<div class="container">
+			<div class="logo">
+				Where In The World ?
+			</div>
+			<div class="theme">
+				<label for="theme__switcher">
+					<i class="fa-moon fa-solid"></i>
+					<span>Dark Mode</span>
+				</label>
+				<input type="checkbox" name="theme" id="theme__switcher">
+			</div>
+		</div>
+	</header>
+	<main>
+		<div class="container">
+			<div class="link__box">
+				<a href="index.html" class="shadow-lg">Back</a>
+			</div>
+			<div class="content">
+				<img src="" class="flag">
+				<div class="details">
+					<h1 class="country__name"></h1>
+					<div class="info">
+						<ul class="county__details__1">
+							<li data-prop = "Native Name" class="native__name">Native Name:</li>
+							<li data-prop = "Population" class="population">Population :</li>
+							<li data-prop = "Region" class="region">Region :</li>
+							<li data-prop = "Sub Region" class="sub__region">Sub Region :</li>
+							<li data-prop = "Capital" class="capital">Capital : </li>
+						</ul>
+						<ul class="county__details__1">
+							<li data-prop = "Top Level Domain" class="top__level__domain">Top Level Domain : </li>
+							<li data-prop = "Currencies" class="currencies">Currencies :</li>
+							<li data-prop = "Languages" class="languages">Languages :</li>
+						</ul>
+					</div>
+					<div class="border__countries">
+						Border Countries :
+						
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+	<script src="detail.js"></script>
+</body>
+</html>

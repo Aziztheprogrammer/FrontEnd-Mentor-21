@@ -1,0 +1,135 @@
+@import "variables";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Nunito sans", sans-serif;
+	background-color: var(--background);
+	color: var(--text);
+	transition: 0.7s ease-in-out background-color, 
+				0.7s ease-in-out color;
+}
+
+header {
+	font-size: clamp(0.75rem, 5vw, 1.15rem);
+	background-color: var(--elements);
+	transition: 0.7s ease-in-out background-color;
+
+	> .container {
+		padding: 0px 16px;
+		margin: auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.logo {
+			padding: 24px 0px;
+			font-weight: bold;
+		}
+
+		.theme {
+			font-size: 1rem;
+
+			label {
+				cursor: pointer;
+
+				span {
+					
+					@media (max-width: 390px) {
+						display: none;
+					}
+				}
+
+				i {
+					margin-right: 8px
+				}
+			}
+		}
+
+		input[type="checkbox"] {
+			appearance: none;
+		}
+	}
+}
+
+// End Header
+
+// Start Main
+
+main {
+	padding: 48px 0px;
+
+	> .container {
+		padding: 0px 16px;
+		margin: auto;
+
+		.link__box{
+			width: 100%;
+
+			a {
+				padding: 8px 24px;
+				background-color: var(--elements);
+				transition: 0.7s ease-in-out background-color;
+				border-radius: 4px;
+			}
+		}
+
+		.content {
+			padding-top: 48px;
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			gap: clamp(16px, 15%, 48px);
+			align-items: center;
+			justify-items: center;
+
+			@media (max-width: 996px) {
+				grid-template: repeat(2, auto) / 1fr;
+			}
+
+			.details {
+				display: flex;
+				flex-direction: column;
+				gap: 32px;
+
+				.country__name{
+					font-size: 1.7rem;
+					font-weight: bolder;
+				}
+
+				> .info {
+					width: 100%;
+					display: flex;
+					justify-content: space-between;
+					font-size: 0.85rem;
+
+					@media (max-width: 996px) {
+						flex-direction: column;
+						gap: 16px;
+					}
+
+					ul li {
+						margin-bottom: 8px;
+					}
+				}
+
+				.border__countries {
+
+					span {
+						display: inline-block;
+						background-color: var(--elements);
+						transition: 0.7s ease-in-out background-color;
+						padding: 8px 16px;
+						border-radius: 4px;
+						margin-left: 16px;
+						margin-top: 8px;
+						font-size: 0.75rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+// End Main

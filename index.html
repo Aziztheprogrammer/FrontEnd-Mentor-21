@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Countries API</title>
+	<!-- Adding Main Font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+	<!-- Linking To Css File -->
+	<link rel="stylesheet" type="text/css" href="style/home.css">
+	<!-- Tailwind CSS -->
+	<script src="https://cdn.tailwindcss.com"></script>
+	<!-- Font Awesome -->
+	<script src="https://kit.fontawesome.com/43b978cfd6.js" crossorigin="anonymous"></script>
+	<!-- Normalize Css File Included In Tailwind -->
+	<!-- Developed By Mohamed Aziz Berhouma -->
+</head>
+<body>
+	<header class="shadow-lg element">
+		<div class="container">
+			<div class="logo">
+				Where In The World ?
+			</div>
+			<div class="theme">
+				<label for="theme__switcher">
+					<i class="fa-moon fa-solid"></i>
+					<span>Dark Mode</span>
+				</label>
+				<input type="checkbox" name="theme" id="theme__switcher">
+			</div>
+		</div>
+	</header>
+	<section class="main__section">
+		<div class="container">
+			<div class="search">
+				<div class="search__bar shadow-md">
+					<i class="fa-solid fa-magnifying-glass"></i>
+					<input type="search" name="search" placeholder="Search for a country..." id="search">
+				</div>
+				<div class="region__selector shadow-md">
+					<select id="region__selector">
+						<option value="" selected disabled hidden>Filter By Region</option>
+						<option value="Africa">Africa</option>
+						<option value="Americas">Americas</option>
+						<option value="Europe">Europe</option>
+						<option value="Asia">Asia</option>
+						<option value="Oceania">Oceania</option>
+					</select>
+				</div>
+			</div>
+			<div class="content">
+			</div>
+		</div>
+	</section>
+	<script src="script.js"></script>
+</body>
+</html>

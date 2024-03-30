@@ -1,0 +1,169 @@
+@import "variables";
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Nunito sans", sans-serif;
+	background-color: var(--background);
+	color: var(--text);
+	transition: 0.7s ease-in-out background-color, 
+				0.7s ease-in-out color;
+}
+
+// Start Header
+
+header {
+	font-size: clamp(0.75rem, 1.1rem, 1.15rem);
+	background-color: var(--elements);
+	transition: 0.7s ease-in-out background-color;
+
+	> .container {
+		padding: 0px 16px;
+		margin: auto;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+
+		.logo {
+			padding: 24px 0px;
+			font-weight: bold;
+		}
+
+		.theme {
+			font-size: 1rem;
+
+			label {
+				cursor: pointer;
+
+				span {
+					
+					@media (max-width: 390px) {
+						display: none;
+					}
+				}
+
+				i {
+					margin-right: 8px
+				}
+			}
+		}
+
+		input[type="checkbox"] {
+			appearance: none;
+		}
+	}
+}
+
+// End Header
+
+
+// Start Main Section
+
+section.main__section {
+	padding: 48px 0px;
+
+	> .container {
+		padding: 0px 16px;
+		margin: auto;
+
+		div.search {
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			gap: 16px;
+
+			> .search__bar {
+				padding: 16px 24px;
+				background-color: var(--elements);
+				transition: 0.7s ease-in-out background-color;
+				border-radius: 4px;
+
+				input {
+					background-color: var(--elements);
+					transition: 0.7s ease-in-out background-color;
+					color: var(--text);
+
+					&:focus {
+						outline: none;
+					}
+
+					&::placeholder {
+						color: var(--text);
+						transition: 0.7s ease-in-out color;
+						font-weight: 300;
+					}
+				}
+
+				i {
+					margin-right: 16px;
+				}
+			}
+
+			.region__selector {
+				background-color: var(--elements);
+				transition: 0.7s ease-in-out background-color;
+				padding: 16px 24px;
+				border-radius: 4px;
+
+				select {
+					font-weight: 300;
+					background-color: var(--elements);
+					transition: 0.7s ease-in-out background-color;
+
+					&:focus {
+						outline: none;
+					}
+				}
+			}
+		}
+
+		div.content {
+			width: 100%;
+			padding: 48px 0px;
+			display: grid;
+			grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+			grid-gap: clamp(24px, 15%, 64px);
+
+			> .country {
+				background-color: var(--elements);
+				transition: 0.7s ease-in-out background-color;
+				border-radius: 8px;
+				cursor: pointer;
+
+				.flag {
+					width: 100%;
+					height: 150px;
+					border-radius: 4px 4px 0px 0px;
+					background-color: white;
+					object-fit: cover; 
+				} 
+
+				.details {
+					padding: 32px 16px;
+
+					.country__name {
+						font-size: 1.1rem;
+						font-weight: 500;
+					}
+
+					small {
+						display: block;
+						font-weight: 400;
+						font-size: 0.75rem;
+						margin-top: 4px;
+					}
+
+					small:first-child {
+						margin-top: 32px;
+					}
+				}
+			}
+		}
+	}
+}
+
+// End Main Section
